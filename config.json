@@ -1,0 +1,101 @@
+{
+  "paths": {
+    "APP": "App",
+    "CLIENT": "App/Client",
+    "SERVER": "App/Server",
+    "SYSTEM": "App/System"
+  },
+  "files": {
+    "stats": "stats.txt",
+    "config": "config.json",
+    "storage": "storage.json"
+  },
+  "cmd_options": [
+    "output::",
+    "diff_day::",
+    "processing::",
+    "count::",
+    "show-once::",
+    "clear-once-list::"
+  ],
+  "count_items": 2,
+  "debug_cli": false,
+  "diff_cleaning_day": 3,
+  "sites": [
+    {
+      "url": "https://tgstat.ru/en/channel/",
+      "PageClass": "TelegramChanelTGStat",
+      "debug_cli": false,
+      "list": [
+        {
+          "id": "kikobzor",
+          "page": "@kikobzor",
+          "is_enabled": true,
+          "count_items": 1
+        },
+        {
+          "id": "rian_ru",
+          "page": "@rian_ru",
+          "is_enabled": true,
+          "count_items": 2
+        },
+        {
+          "id": "forpost_sev",
+          "page": "@forpost_sev",
+          "is_enabled": true,
+          "count_items": 1
+        },
+        {
+          "id": "breakingmash",
+          "page": "@breakingmash",
+          "is_enabled": false,
+          "count_items": 2
+        },
+        {
+          "id": "meduzalive",
+          "page": "@meduzalive",
+          "is_enabled": false,
+          "count_items": 2
+        },
+        {
+          "id": "varlamov_news",
+          "page": "@varlamov_news",
+          "is_enabled": true,
+          "count_items": 2
+        },
+        {
+          "id": "sndkgram",
+          "page": "@sndkgram",
+          "is_enabled": true,
+          "count_items": 2
+        }
+      ]
+    },
+    {
+      "url": "https://sevvodokanal.org.ru/",
+      "PageClass": "Sevvodokanal",
+      "debug_cli": false,
+      "list": [
+        {
+          "id": "news",
+          "page": "news",
+          "is_enabled": true,
+          "count_items": 4
+        }
+      ]
+    },
+    {
+      "url": "https://sevenergosbyt.ru/",
+      "PageClass": "Sevenergosbyt",
+      "debug_cli": false,
+      "list": [
+        {
+          "id": "news",
+          "page": "?cat=1",
+          "is_enabled": true,
+          "count_items": 4
+        }
+      ]
+    }
+  ]
+}

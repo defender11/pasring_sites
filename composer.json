@@ -1,0 +1,10 @@
+{
+    "require": {
+        "simplehtmldom/simplehtmldom": "2.0-RC2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App"
+        }
+    }
+}
